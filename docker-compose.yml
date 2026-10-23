@@ -1,0 +1,10 @@
+services:
+  accessedu:
+    build: .
+    ports: ["8000:8000"]
+    volumes: ["accessedu-data:/data"]
+    environment:
+      # true — разрешить проверку страниц во внутренней сети (интранет). По умолчанию запрещено (защита от SSRF).
+      ACCESSEDU_ALLOW_PRIVATE_HOSTS: "false"
+volumes:
+  accessedu-data:
