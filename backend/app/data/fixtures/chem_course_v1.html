@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+body{font-family:Arial;background:#fff}
+.hero{background:#2b6cb0;color:#a9c7ee;padding:24px}
+.muted{color:#b5b5b5;font-size:13px}
+.btn{background:#38a169;color:#fff;padding:8px 14px}
+nav a{color:#7aa7d9}
+</style>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+<div class="hero"><h2>Введение в химию</h2><p>Онлайн-курс для студентов первого курса</p></div>
+<nav>
+ <a href="/syllabus.pdf">Программа курса</a>
+ <a href="/schedule">Расписание</a>
+ <a href="/lectures">Лекции</a>
+ <a href="/help">Нажмите здесь</a>
+</nav>
+<div class="content">
+ <img src="/img/lab.jpg">
+ <img src="/img/IMG_2045.jpg" alt="IMG_2045.jpg">
+ <h4>О курсе</h4>
+ <p class="muted">Курс знакомит с основами строения вещества, периодическим законом и химическими реакциями.</p>
+ <video src="/media/intro.mp4" controls autoplay></video>
+ <div onclick="openMenu()">Меню</div>
+ <h3></h3>
+ <table>
+  <tr><td>Неделя</td><td>Тема</td><td>Тест</td></tr>
+  <tr><td>1</td><td>Атомы и молекулы</td><td>Тест 1</td></tr>
+  <tr><td>2</td><td>Периодическая система</td><td>Тест 2</td></tr>
+ </table>
+ <form action="/subscribe">
+  <input type="text" name="email" placeholder="Ваша почта">
+  <input type="radio" name="level" id="l1"><label for="l1">Базовый</label>
+  <input type="radio" name="level" id="l2"><label for="l2">Продвинутый</label>
+  <button><img src="/img/send.png"></button>
+ </form>
+ <a class="btn" href="/enroll"><button>Записаться</button></a>
+</div>
+</body>
+</html>

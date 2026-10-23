@@ -1,0 +1,5 @@
+Flask>=3.0
+pydantic>=2.5
+beautifulsoup4>=4.12
+requests>=2.31
+# для продакшена: gunicorn (Linux) или waitress (Windows)
