@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Колледж информационных технологий — студентам</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:system-ui,sans-serif;color:#1b1f2a;background:#fff}
+header{background:#0f3d6e;color:#fff;padding:16px}
+a{color:#0b4f9c}
+header a{color:#fff}
+.card{border:1px solid #c9cfdc;padding:12px;margin:8px 0}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;background:#fff;color:#000}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к основному содержанию</a>
+<header>
+ <h1>Колледж информационных технологий</h1>
+ <nav aria-label="Главное меню"><ul>
+  <li><a href="/admission">Поступающим</a></li>
+  <li><a href="/students">Студентам</a></li>
+  <li><a href="/contacts">Контакты</a></li>
+ </ul></nav>
+</header>
+<main id="main">
+ <h2>Студентам</h2>
+ <section class="card"><h3>Расписание занятий</h3><p>Актуальное расписание на неделю. <a href="/schedule">Открыть расписание</a></p></section>
+ <section class="card"><h3>Электронная библиотека</h3><p>Учебники и методички. <a href="/library">Перейти в библиотеку</a></p></section>
+ <h2>Обратная связь</h2>
+ <form action="/feedback">
+  <label for="name">Имя</label><input id="name" name="name" autocomplete="name">
+  <label for="msg">Сообщение</label><textarea id="msg" name="msg"></textarea>
+  <button type="submit">Отправить</button>
+ </form>
+</main>
+</body>
+</html>

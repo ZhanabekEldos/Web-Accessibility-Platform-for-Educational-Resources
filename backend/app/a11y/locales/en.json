@@ -1,0 +1,224 @@
+{
+ "image-alt": {
+  "title": "Images must have alternative text",
+  "message": "The image has no alt attribute.",
+  "fix": "Add an alt that conveys the meaning of the image; use an empty alt=\"\" for decorative images."
+ },
+ "image-alt-quality": {
+  "title": "Alternative text must be meaningful",
+  "message": "The alt text “{alt}” does not describe the image (file name or generic word).",
+  "fix": "Describe what is shown and why it matters. Avoid “image”, “photo” and file names.",
+  "review": "Very long alt text ({alt_length} characters): shorten it or move the description into the page text."
+ },
+ "image-input-alt": {
+  "title": "Image buttons must have alternative text",
+  "message": "input type=\"image\" has no alternative text.",
+  "fix": "Add an alt naming the action, e.g. “Search”."
+ },
+ "area-alt": {
+  "title": "Image map areas must have alt text",
+  "message": "The <area> link has no text description.",
+  "fix": "Add an alt describing where the link goes."
+ },
+ "svg-img-alt": {
+  "title": "SVG with role img must have a name",
+  "message": "SVG with role=\"img\" has no accessible name.",
+  "fix": "Add aria-label or a nested <title>."
+ },
+ "embedded-alt": {
+  "title": "Embedded objects must have a text alternative",
+  "message": "The embedded object has no name or fallback text.",
+  "fix": "Add aria-label or fallback content inside the element."
+ },
+ "video-captions": {
+  "title": "Videos must have captions",
+  "message": "The video has no <track kind=\"captions\">.",
+  "fix": "Add a WebVTT caption track. It helps deaf and hard-of-hearing students and anyone watching without sound."
+ },
+ "audio-transcript": {
+  "title": "Audio needs a text transcript",
+  "message": "The audio recording needs a transcript — check that one is provided nearby.",
+  "fix": "Link to a text transcript next to the player."
+ },
+ "embedded-video-review": {
+  "title": "Embedded video: check captions",
+  "message": "Embedded video ({host}): captions cannot be verified automatically.",
+  "fix": "Make sure the video has accurate captions and a transcript, and enable captions by default."
+ },
+ "media-autoplay": {
+  "title": "Do not autoplay audio or video",
+  "message": "Media starts automatically and can interfere with reading and screen readers.",
+  "fix": "Remove autoplay or make the video muted with visible controls."
+ },
+ "document-title": {
+  "title": "Pages must have a descriptive title",
+  "message": "The <title> is missing or not descriptive.",
+  "fix": "Set a <title> that briefly describes the page and course."
+ },
+ "page-has-h1": {
+  "title": "Pages should have a level-one heading",
+  "message": "The page has no <h1>.",
+  "fix": "Add a single <h1> with the page name."
+ },
+ "heading-order": {
+  "title": "Heading levels should not be skipped",
+  "message": "Heading h{to} follows h{from}: a level is skipped.",
+  "fix": "Do not skip levels: h1 → h2 → h3. Use CSS for appearance."
+ },
+ "heading-empty": {
+  "title": "Headings must not be empty",
+  "message": "Empty heading.",
+  "fix": "Add text or remove the heading."
+ },
+ "landmark-main": {
+  "title": "The page must have exactly one main landmark",
+  "message": "The <main> landmark is missing or duplicated ({count}).",
+  "fix": "Wrap the main content in a single <main> element."
+ },
+ "bypass-blocks": {
+  "title": "A way to bypass repeated blocks is needed",
+  "message": "No skip link, main landmark or headings for navigation.",
+  "fix": "Add a “Skip to content” link first and use <main> and headings."
+ },
+ "list-structure": {
+  "title": "Lists must be marked up correctly",
+  "message": "Invalid list structure: <li> outside a list or a foreign child inside ul/ol.",
+  "fix": "Put <li> only inside <ul>/<ol>, and only <li> inside lists."
+ },
+ "table-headers": {
+  "title": "Data tables need headers",
+  "message": "The table has no <th> header cells.",
+  "fix": "Mark column and row headers with <th scope=\"col|row\">."
+ },
+ "duplicate-id": {
+  "title": "id values must be unique",
+  "message": "Duplicate id “{id}”.",
+  "fix": "Make ids unique: labels and ARIA rely on them."
+ },
+ "meta-refresh": {
+  "title": "Do not refresh the page automatically",
+  "message": "Automatic refresh or redirect after {delay} s.",
+  "fix": "Remove meta refresh and let users decide when to reload."
+ },
+ "blink-marquee": {
+  "title": "Do not use blinking or scrolling text",
+  "message": "The obsolete blink/marquee element is used.",
+  "fix": "Use static text; make any animation pausable."
+ },
+ "viewport-zoom": {
+  "title": "Zooming must not be blocked",
+  "message": "Page zoom is disabled in meta viewport.",
+  "fix": "Remove user-scalable=no and any maximum-scale below 2."
+ },
+ "frame-title": {
+  "title": "Frames must have a title",
+  "message": "The iframe has no title attribute.",
+  "fix": "Add a title describing the frame content."
+ },
+ "html-lang": {
+  "title": "The page language must be set",
+  "message": "The <html> element has no lang attribute.",
+  "fix": "Add lang, e.g. <html lang=\"en\">. Screen readers use it for pronunciation."
+ },
+ "html-lang-valid": {
+  "title": "The page language code must be valid",
+  "message": "Invalid language code “{lang}”.",
+  "fix": "Use BCP 47 codes: en, ru, kk, en-US."
+ },
+ "lang-parts-valid": {
+  "title": "Language codes of page parts must be valid",
+  "message": "Invalid language code “{lang}”.",
+  "fix": "Use BCP 47 codes: en, ru, kk."
+ },
+ "lang-content-mismatch": {
+  "title": "The page language must match its text",
+  "message": "The declared language is “{declared}” but the text looks like “{detected}”.",
+  "fix": "Check the page lang and mark passages in other languages with lang."
+ },
+ "form-label": {
+  "title": "Form fields must have labels",
+  "message": "The form field has no label.",
+  "fix": "Associate a <label for> with the field or add aria-label."
+ },
+ "placeholder-label": {
+  "title": "A placeholder is not a label",
+  "message": "The only name of the field is its placeholder, which disappears while typing.",
+  "fix": "Add a visible <label>; keep the placeholder for an example."
+ },
+ "autocomplete": {
+  "title": "Personal data fields should support autofill",
+  "message": "The field can be autofilled but has no autocomplete (expected “{expected}”).",
+  "fix": "Add an autocomplete attribute with a suitable token."
+ },
+ "radio-group": {
+  "title": "Radio and checkbox groups must be grouped",
+  "message": "The group “{name}” ({count} items) is not wrapped in a fieldset with a legend.",
+  "fix": "Wrap the group in a <fieldset> with a <legend>."
+ },
+ "button-name": {
+  "title": "Buttons must have a name",
+  "message": "The button has no accessible name.",
+  "fix": "Add text or aria-label."
+ },
+ "link-name": {
+  "title": "Links must have a name",
+  "message": "The link has no text or accessible name.",
+  "fix": "Add link text or aria-label; use alt on images inside links."
+ },
+ "link-text-generic": {
+  "title": "Link text must make sense out of context",
+  "message": "The link “{text}” says nothing about its destination.",
+  "fix": "Describe the target: “Course syllabus (PDF)” instead of “Download”."
+ },
+ "document-link-review": {
+  "title": "Linked documents: check accessibility",
+  "message": "Link to a .{format} file: make sure it is tagged (structure, headings, alt) and the format is stated.",
+  "fix": "State format and size in the link text; check the document or provide an HTML version."
+ },
+ "nested-interactive": {
+  "title": "Interactive elements must not be nested",
+  "message": "A link or button contains another control ({inner}).",
+  "fix": "Keep a single interactive element."
+ },
+ "tabindex-positive": {
+  "title": "Do not use positive tabindex",
+  "message": "tabindex={tabindex} breaks the natural focus order.",
+  "fix": "Use tabindex=\"0\" or -1 and arrange elements in source order."
+ },
+ "mouse-only-handler": {
+  "title": "Mouse actions must work from the keyboard",
+  "message": "Click handler on a non-interactive element without {missing}.",
+  "fix": "Use <button> or <a>; otherwise add role, tabindex=\"0\" and Enter/Space handling."
+ },
+ "focusable-aria-hidden": {
+  "title": "Focusable content must not be aria-hidden",
+  "message": "Focusable elements inside aria-hidden ({focusable}).",
+  "fix": "Remove aria-hidden or make the content unfocusable (tabindex=\"-1\", disabled)."
+ },
+ "aria-valid-role": {
+  "title": "ARIA roles must be valid",
+  "message": "Unknown role “{role}”.",
+  "fix": "Check the spelling or use a native element."
+ },
+ "aria-valid-attr": {
+  "title": "ARIA attributes must exist",
+  "message": "Unknown ARIA attributes: {attrs}.",
+  "fix": "Fix the typo in the attribute name."
+ },
+ "aria-idref": {
+  "title": "ARIA references must point to existing elements",
+  "message": "{attr} refers to a missing id: {missing}.",
+  "fix": "Make sure an element with that id exists."
+ },
+ "aria-required-attr": {
+  "title": "ARIA roles must have required attributes",
+  "message": "Role “{role}” lacks required attributes: {missing}.",
+  "fix": "Add the missing state attributes."
+ },
+ "color-contrast": {
+  "title": "Text must have enough contrast",
+  "message": "Contrast {ratio}:1 where {required}:1 is required (text {fg} on {bg}).",
+  "fix": "Darken the text or lighten the background. Need 4.5:1 for normal text, 3:1 for large text.",
+  "review": "Contrast cannot be computed automatically: text over a background image or gradient. Check manually."
+ }
+}
