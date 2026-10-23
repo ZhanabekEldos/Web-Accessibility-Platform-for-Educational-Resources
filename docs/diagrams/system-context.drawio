@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="context" name="Page-1">
+    <mxGraphModel dx="1120" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=22;fontStyle=1;align=center;" value="AccessEdu — System Context Diagram" vertex="1">
+          <mxGeometry height="40" width="560" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="dev" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Web Developer&amp;#xa;Checks accessibility, identifies issues and fixes them" vertex="1">
+          <mxGeometry height="100" width="220" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Educational Website Administrator&amp;#xa;Monitors compliance, manages resources and reports" vertex="1">
+          <mxGeometry height="100" width="220" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="sys" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0b2d57;strokeColor=#0b2d57;fontColor=#ffffff;fontStyle=1;fontSize=16;" value="AccessEdu&amp;#xa;Web Accessibility Evaluation and Improvement Platform&amp;#xa;for Educational Resources" vertex="1">
+          <mxGeometry height="190" width="310" x="420" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="site" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Educational Websites / LMS&amp;#xa;Public HTML pages and assets to be evaluated" vertex="1">
+          <mxGeometry height="100" width="220" x="900" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="wcag" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="WCAG 2.2 Standards&amp;#xa;Rules and evaluation criteria" vertex="1">
+          <mxGeometry height="100" width="220" x="900" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="dev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="sys" value="URL / HTML, settings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="sys" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="dev" value="Results, reports, remediation guidance">
+          <mxGeometry relative="1" x="0.2157" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="sys" value="URL / HTML, resource management">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="sys" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="admin" value="History, reports, notifications">
+          <mxGeometry relative="1" x="0.1698" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="sys" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="site" value="HTTP request / fetch content">
+          <mxGeometry relative="1" x="0.193" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="site" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="sys" value="HTML / assets">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="sys" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="wcag" value="Reference criteria">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="wcag" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="sys" value="WCAG 2.2 guidance">
+          <mxGeometry relative="1" x="-0.193" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
