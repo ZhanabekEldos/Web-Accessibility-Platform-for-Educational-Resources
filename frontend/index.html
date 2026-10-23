@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>AccessEdu</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="%CSS%">
+  <script>
+    // Применяем сохранённые настройки до первой отрисовки, чтобы не было «вспышки» темы.
+    try {
+      var p = JSON.parse(localStorage.getItem("accessedu.prefs") || "{}"), d = document.documentElement;
+      if (p.theme && p.theme !== "auto") d.dataset.theme = p.theme;
+      if (p.textSize) d.dataset.text = p.textSize;
+      if (p.motion) d.dataset.motion = p.motion;
+      if (p.lang) d.lang = p.lang;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <noscript>Для работы AccessEdu нужен JavaScript.</noscript>
+  <script type="module" src="%JS%"></script>
+</body>
+</html>
